@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="170dp"
+        android:layout_height="300dp">
+
+        <ImageView
+            android:id="@+id/cart_item_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cart_item" />
+
+        <ImageView
+            android:id="@+id/cart_product_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/cart_item_product_name"
+            android:layout_alignParentEnd="true"
+            android:layout_toStartOf="@+id/cart_item_change_btn"
+            android:src="@drawable/item_test_2" />
+
+        <ImageButton
+            android:id="@+id/remove_item_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:src="@drawable/ic_action_cancel" />
+
+        <TextView
+            android:id="@+id/cart_item_product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/cart_item_bg"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="72dp"
+            android:layout_marginLeft="5dp"
+            android:text="Product Name goes here" />
+
+        <TextView
+            android:id="@+id/cart_item_product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/cart_item_product_name"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:text="Rs 3250.00"
+            android:textColor="@color/md_red_500" />
+
+        <Button
+            android:id="@+id/cart_item_change_btn"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignEnd="@+id/remove_item_btn"
+            android:layout_below="@+id/cart_item_product_price"
+            android:text="Change"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/cart_item_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/cart_item_change_btn"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="XL" />
+
+        <ImageView
+            android:id="@+id/cart_item_qnty_bg"
+            android:layout_width="35dp"
+            android:layout_height="50dp"
+            android:layout_above="@+id/cart_item_product_name"
+            android:layout_alignEnd="@+id/cart_item_change_btn"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/single_item_count_cart" />
+
+        <TextView
+            android:id="@+id/cart_item_qnty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/cart_item_qnty_bg"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/cart_item_qnty_bg"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="13dp"
+            android:text="F"
+            android:textSize="30sp" />
+        <!---->
+
+    </RelativeLayout>
+</LinearLayout>

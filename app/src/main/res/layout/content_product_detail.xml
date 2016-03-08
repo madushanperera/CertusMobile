@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="app.certus.com.certusmobile.ProductDetailActivity"
+    tools:showIn="@layout/activity_product_detail">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/product_detail_imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:src="@drawable/item_test_2" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignBottom="@+id/product_detail_imageView"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="bottom|end"
+                android:layout_marginEnd="27dp"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:layout_marginRight="@dimen/fab_margin"
+                android:src="@drawable/ic_action_add" />
+
+            <TextView
+                android:id="@+id/product_detail_product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/product_detail_imageView"
+                android:text="Fabana Top | Dorathy Perkins"
+                android:textColor="@android:color/black"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/product_detail_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/product_detail_product_name"
+                android:text="Rs. 3250.00"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="20dp" />
+
+            <LinearLayout
+                android:id="@+id/product_details_btn_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="false"
+                android:layout_below="@+id/product_detail_price"
+                android:orientation="horizontal">
+
+
+                <ImageButton
+                    android:id="@+id/product_detail_add_wish_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="90dp"
+                    android:src="@drawable/ic_action_heart" />
+
+                <ImageButton
+                    android:id="@+id/product_detail_add_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="90dp"
+                    android:src="@drawable/ic_action_monolog" />
+
+                <ImageButton
+                    android:id="@+id/product_detail_view_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_action_eye_open" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/product_details_btn_layout"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/product_detail_product_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="long text that will automaticly scroll and make sure all content
+                     of the text view will be displayed right below to the product_details_btn_layout
+                      implemented above." />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/size_btn"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/fab"
+                android:layout_alignParentTop="true"
+                android:background="@color/md_red_500"
+                android:text="@string/size_btn_raw_string"
+                android:textColor="@color/md_red_50" />
+
+            <Button
+                android:id="@+id/btn_qnty_sel"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/md_red_500"
+                android:text="@string/qnty_btn_raw_string"
+                android:textColor="@color/md_red_50"
+                android:layout_above="@+id/fab"
+                android:layout_alignEnd="@+id/fab"
+                android:layout_marginBottom="22dp" />
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

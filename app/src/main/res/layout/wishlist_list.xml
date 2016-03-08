@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="16dp"
+    card_view:cardCornerRadius="8dp"
+    card_view:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="185dp"
+        android:layout_height="300dp">
+
+        <ImageView
+            android:id="@+id/wish_list_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/item_test_2" />
+
+        <TextView
+            android:id="@+id/wish_list_pro_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/md_red_500"
+            android:gravity="center_horizontal"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="Santa Hana Women Multi color Top"
+            android:textColor="#ffffff"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/wish_list_pro_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/md_red_500"
+            android:gravity="center_horizontal"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="Rs 3400.00"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_above="@+id/wish_list_pro_name"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/wish_list_pro_brand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/md_red_500"
+            android:gravity="center_horizontal"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="Dorathy Perkins"
+            android:textColor="#ffffff"
+            android:textSize="13sp"
+            android:layout_above="@+id/wish_list_pro_price"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
